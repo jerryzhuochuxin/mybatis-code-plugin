@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b6f096b-bdac-49e8-9928-82af6fdbfc67" name="Default Changelist" comment="" />
+    <list default="true" id="5b6f096b-bdac-49e8-9928-82af6fdbfc67" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +118,7 @@
       <workItem from="1580480816967" duration="425000" />
       <workItem from="1580481266858" duration="3296000" />
       <workItem from="1580560337386" duration="4234000" />
+      <workItem from="1584629737694" duration="996000" />
     </task>
     <task id="LOCAL-00001" summary="依赖调整">
       <created>1580563783042</created>
