@@ -341,9 +341,11 @@ public class UserController {
 
 ```
 
-#### 可以将其复制到一个文件中，然后配置\<fileName\>这样可以定制更多的生成规则，具体的定制方式url,如果链接失效了，可以自行google：mybatis-plus 代码生成器的配置
+#### 可以将其复制到一个文件中，然后配置\<fileName\>这样可以定制更多的生成规则，具体的[定制方式](https://mp.baomidou.com/config/generator-config.html "点击跳转"),如果链接失效了，可以自行google：mybatis-plus 代码生成器的配置
 
 #### 注意这里的include,不填的会全库生成
+
+#### [已经打包好的jar](https://github.com/jerryzhuochuxin/file/blob/master/generate-3.1.2.jar "点击下载")
 
 #### 关于如何将jar包安装到本地，输入以下命令即可
 

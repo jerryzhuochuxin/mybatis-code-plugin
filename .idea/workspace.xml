@@ -117,7 +117,7 @@
       <workItem from="1580480816967" duration="425000" />
       <workItem from="1580481266858" duration="3296000" />
       <workItem from="1580560337386" duration="4234000" />
-      <workItem from="1584629737694" duration="1740000" />
+      <workItem from="1584629737694" duration="2042000" />
     </task>
     <task id="LOCAL-00001" summary="依赖调整">
       <created>1580563783042</created>
@@ -147,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584633547779</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="readmemd">
+      <created>1584634277555</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584634277555</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
