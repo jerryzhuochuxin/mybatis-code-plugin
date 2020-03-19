@@ -107,27 +107,152 @@
 
 ##### entity展示
 
-不支持在 Doc 外粘贴 block
+``` java
+package com.example.demo_5.entity;
+
+import java.io.Serializable;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
+
+/**
+ * @author codeGenerator
+ * @since 2020-01-30
+ */
+@Data
+@EqualsAndHashCode(callSuper = false)
+@Accessors(chain = true)
+public class User implements Serializable {
+
+
+    /**
+     * 主键ID
+     */
+    private Long id;
+
+    /**
+     * 姓名
+     */
+    private String name;
+
+    /**
+     * 年龄
+     */
+    private Integer age;
+
+    /**
+     * 邮箱
+     */
+    private String email;
+
+    /**
+     * 地址
+     */
+    private String address;
+
+    /**
+     * 详细信息
+     */
+    private Long infoId;
+
+
+}
+```
 
 ##### mapper展示
 
-不支持在 Doc 外粘贴 block
+``` java
+package com.example.demo_5.mapper;
+
+import com.example.demo_5.entity.User;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
+/**
+ *  Mapper 接口
+ *
+ * @author codeGenerator
+ * @since 2020-01-30
+ */
+public interface UserMapper extends BaseMapper<User> {
+
+}
+```
 
 ##### xml展示
 
-不支持在 Doc 外粘贴 block
+``` xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo_5.mapper.UserMapper">
+
+</mapper>
+```
 
 ##### service展示
 
-不支持在 Doc 外粘贴 block
+``` java
+package com.example.demo_5.service;
+
+import com.example.demo_5.entity.User;
+import com.baomidou.mybatisplus.extension.service.IService;
+
+/**
+ *  服务类
+ *
+ * @author codeGenerator
+ * @since 2020-01-30
+ */
+public interface IUserService extends IService<User> {
+
+}
+```
 
 ##### serviceImpl展示
 
-不支持在 Doc 外粘贴 block
+``` java
+package com.example.demo_5.service.impl;
+
+import com.example.demo_5.entity.User;
+import com.example.demo_5.mapper.UserMapper;
+import com.example.demo_5.service.IUserService;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.stereotype.Service;
+
+/**
+ *  服务实现类
+ *
+ * @author codeGenerator
+ * @since 2020-01-30
+ */
+@Service
+public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
+
+}
+```
 
 ##### controller展示
 
-不支持在 Doc 外粘贴 block
+``` java
+package com.example.demo_5.controller;
+
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import org.springframework.stereotype.Controller;
+
+/**
+ *  前端控制器
+ *
+ * @author codeGenerator
+ * @since 2020-01-30
+ */
+@Controller
+@RequestMapping("/user")
+public class UserController {
+
+}
+
+```
 
 #### 这样的一套下来，不管是xml还是mapper都会比之前mybatis-generate生成的简单很多，而且附加功能很多，使用者只需要了解一下mybatis-plus的简单使用就可以了
 
@@ -144,9 +269,7 @@
 #### 关于如何将jar包安装到本地，输入以下命令即可
 
 ``` shell
-
 mvn install:install-file -Dfile=/Users/zhuochuxin/mybatisPlusgenerate/target/generate-3.1.2.jar -DgroupId=com.jerryzhuo.mybatisPlus -DartifactId=generate -Dversion=3.1.2 -Dpackaging=jar
-
 ```
 
 注意：将-Dfile=后面的路径改成jar包的文件路径即可
