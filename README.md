@@ -258,7 +258,82 @@ public class UserController {
 
 #### 在每次执行完命令后控制台会输出一个json内容，如下
 
-不支持在 Doc 外粘贴 block
+``` json
+{
+	"gDataSourceConfig": {
+		"driverName": "com.mysql.jdbc.Driver",
+		"password": "123456",
+		"schemaName": null,
+		"url": "jdbc:mysql://localhost:33306/mybatisPlus",
+		"username": "root"
+	},
+	"gGlobalConfig": {
+		"activeRecord": false,
+		"author": "codeGenerator",
+		"baseColumnList": false,
+		"baseResultMap": false,
+		"controllerName": null,
+		"enableCache": false,
+		"entityName": null,
+		"fileOverride": false,
+		"kotlin": false,
+		"mapperName": null,
+		"open": false,
+		"outputDir": "src/main/java",
+		"serviceImplName": null,
+		"serviceName": null,
+		"swagger2": false,
+		"xmlName": null
+	},
+	"gPackageConfig": {
+		"controller": "controller",
+		"entity": "entity",
+		"mapper": "mapper",
+		"moduleName": null,
+		"parent": "com.example.demo_5",
+		"pathInfo": null,
+		"service": "service",
+		"serviceImpl": "service.impl",
+		"xml": "mapper.xml"
+	},
+	"gStrategyConfig": {
+		"capitalMode": false,
+		"controllerMappingHyphenStyle": false,
+		"entityBooleanColumnRemoveIsPrefix": false,
+		"entityBuilderModel": false,
+		"entityColumnConstant": false,
+		"entityLombokModel": false,
+		"entitySerialVersionUID": false,
+		"entityTableFieldAnnotationEnable": false,
+		"exclude": null,
+		"fieldPrefix": null,
+		"include": [
+			"user"
+		],
+		"logicDeleteFieldName": null,
+		"restControllerStyle": false,
+		"skipView": false,
+		"superControllerClass": null,
+		"superEntityClass": null,
+		"superEntityColumns": null,
+		"superMapperClass": null,
+		"superServiceClass": null,
+		"superServiceImplClass": null,
+		"tablePrefix": null,
+		"versionFieldName": null
+	},
+	"gTemplateConfig": {
+		"controller": "/templates/controller.java",
+		"entity": "/templates/entity.java",
+		"entityKt": "/templates/entity.kt",
+		"mapper": "/templates/mapper.java",
+		"service": "/templates/service.java",
+		"serviceImpl": "/templates/serviceImpl.java",
+		"xml": "/templates/mapper.xml"
+	}
+}
+
+```
 
 #### 可以将其复制到一个文件中，然后配置\<fileName\>这样可以定制更多的生成规则，具体的定制方式url,如果链接失效了，可以自行google：mybatis-plus 代码生成器的配置
 
