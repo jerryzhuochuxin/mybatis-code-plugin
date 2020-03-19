@@ -103,7 +103,11 @@
 
 #### 可以看到左边的目录会生成一系列文件和目录
 
+![文件和目录](https://github.com/jerryzhuochuxin/picture/blob/master/mybatis-code-2.png)
+
 #### 生成的目录如下,图中绿色的表示生成的文件，其中service,entity,controller,mapper等都是生成的
+
+![目录](https://github.com/jerryzhuochuxin/picture/blob/master/mybatis-code-1.png)
 
 ##### entity展示
 
@@ -258,6 +262,8 @@ public class UserController {
 
 #### 在每次执行完命令后控制台会输出一个json内容，如下
 
+![cmd](https://github.com/jerryzhuochuxin/picture/blob/master/mybatis-code-3.png)
+
 ``` json
 {
 	"gDataSourceConfig": {
@@ -338,8 +344,6 @@ public class UserController {
 #### 可以将其复制到一个文件中，然后配置\<fileName\>这样可以定制更多的生成规则，具体的定制方式url,如果链接失效了，可以自行google：mybatis-plus 代码生成器的配置
 
 #### 注意这里的include,不填的会全库生成
-
-不支持在 Doc 外粘贴 block
 
 #### 关于如何将jar包安装到本地，输入以下命令即可
 
